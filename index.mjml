@@ -39,7 +39,7 @@
    <!-- header -->
     <mj-section background-color="#FFF">
         <mj-column>
-            <mj-image href="http://google.fr" width="222px" src="img/header-logo.jpg" alt="logo">
+            <mj-image href="http://google.fr" width="222px" src="https://github.com/allan1989/mjml-email/blob/main/img/header-logo.jpg" alt="logo">
         </mj-column>
     </mj-section>
    <!-- pre header -->
