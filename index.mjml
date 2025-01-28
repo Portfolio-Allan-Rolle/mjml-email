@@ -4,152 +4,360 @@
       name="Open Sans"
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     />
-    <mj-style inline="inline">
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        .primary-link a {
-            color: #131914;
-        }
-        .product-link a {
-            color: #319ae7;
-            font-size: 16px;
-            line-height: 20px;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        .no-padding td{
-            padding-top: 0 !important;
-            padding-bottom: 0 !important;
-        }
+    <mj-style>
+      a{font-family:"Open Sans", sans-serif} .primary-link a { color: #131914;}
+      .secondary-link a { color: #319ae7; text-decoration: none; }
+      .products-link a { color: #319ae7; font-size: 16px; line-height: 20px;
+      font-weight: bold; text-decoration: none; } .tertiary-link a{ color: #777;
+      } .no-padding td{ padding-top: 0 !important; padding-bottom: 0 !important;
+      } .center-with-margin { margin: 0 auto; }
     </mj-style>
   </mj-head>
   <mj-body width="650px" background-color="rgb(243, 246, 248)">
-  <!-- pre-header -->
+    <!-- pre-header -->
     <mj-section>
       <mj-column>
-        <mj-text css-class="primary-link" font-family="Open Sans, Sans-serif" font-size="12px" line-height="20px" color="#777" align='center'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus, sem ac tempus mollis, eros justo blandit nunc, ut blandit nulla dui cursus diam.        
-        | <a href="http://google.fr" target='_blank'>View Online</a> </mj-text>
+        <mj-text
+          css-class="primary-link"
+          font-family="Open Sans, Sans-serif"
+          font-size="12px"
+          line-height="20px"
+          color="#777"
+          align="center"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+          tempus, sem ac tempus mollis, eros justo blandit nunc, ut blandit
+          nulla dui cursus diam. |
+          <a href="http://google.fr" target="_blank">View Online</a>
+        </mj-text>
       </mj-column>
     </mj-section>
-   <!-- / pre-header --> 
-   <!-- header -->
+    <!-- / pre-header -->
+    <!-- header -->
     <mj-section background-color="#FFF">
-        <mj-column>
-            <mj-image href="http://google.fr" width="222px" src="https://github.com/allan1989/mjml-email/blob/main/img/header-logo.jpg" alt="logo">
-        </mj-column>
+      <mj-column>
+        <mj-image
+          css-class="center-with-margin"
+          align="center"
+          href="http://google.fr"
+          width="222px"
+          src="https://github.com/allan1989/mjml-email/blob/main/img/header-logo.jpg?raw=true"
+          alt="logo"
+        />
+      </mj-column>
     </mj-section>
-   <!-- pre header -->
-   <!-- hero -->
-    <mj-hero       
-        mode="fluid-height"
-        height="600px"
-        background-width="600px"
-        background-height="230px"
-        background-url=
-          "img/hero.gif"
-        background-color="#2a3448">
+    <!-- pre header -->
+    <!-- hero -->
+    <mj-hero
+      mode="fluid-height"
+      height="600px"
+      background-width="600px"
+      background-height="230px"
+      background-url="https://github.com/allan1989/mjml-email/blob/main/img/hero.gif?raw=true"
+      background-color="#2a3448"
+    >
     </mj-hero>
     <mj-section background-color="#369CE6">
-        <mj-column>
-            <mj-text font-size="44px" align="center" line-height="48px" color="#FFF" font-weight="bold">
-                Thank you for signing up!
-            </mj-text>
-            <mj-text font-size="15px" line-height="18px" color="#FFF" align="center" padding="0px 75px 50px">
-                Aenean porttitor molestie dolo at malesuada tortor dignissim eu interdum arcu massa maximus felis eget condimentum ligula enim quis diam
-            </mj-text>
-        </mj-column>
+      <mj-column>
+        <mj-text
+          font-family="Open Sans, Sans-serif"
+          font-size="44px"
+          align="center"
+          line-height="48px"
+          color="#FFF"
+          font-weight="bold"
+        >
+          Thank you for signing up!
+        </mj-text>
+        <mj-text
+          font-family="Open Sans, Sans-serif"
+          font-size="15px"
+          line-height="18px"
+          color="#FFF"
+          align="center"
+          padding="0px 75px 50px"
+        >
+          Aenean porttitor molestie dolo at malesuada tortor dignissim eu
+          interdum arcu massa maximus felis eget condimentum ligula enim quis
+          diam
+        </mj-text>
+      </mj-column>
     </mj-section>
-   <!-- / hero -->
-   <!-- arrow -->
-        <mj-wrapper background-color="#FFF" padding="13px" background-url="img/image1.jpg" background-repeat='no-repeat'></mj-wrapper>
-   <!-- / arrow -->
-   <!-- main content -->
-   <mj-wrapper background-color="#FFF">
-        <!-- message -->
-        <mj-section>
-            <mj-column width="560px">
-               <mj-text font-size="28px" line-height="24px" color="#131914" font-weight="bold">Hi Dear User,</mj-text> 
-               <mj-text font-size="15px" line-height="20px" color="#777">Lorem ipsum dolor sit amet consectetur adipiscing enean porttitor molestie dolor at malesuada tortor dignissim <a href="http://google.fr" target='_blank'>vitae dolor sapien tincidunt</a> consectetur necvitae id ipsum eleifend cursus nisl felissapien fermentum rhoncus. 
-                <br><br> Pellentesque <a href="http://google.fr" target='_blank'>tempus tempus matus vel porttitor</a>. Donec venenatis varius felis lacinia maecenas eu commodo massa. Pellentesque a imperdiet ante.</mj-text>
-                <mj-text font-size="15px" font-style='italic' font-weight="bold" color="#777">Fusce et dolor tempus dapibus nisl ac vestibulum quam ac aliquam lorem.</mj-text>
-                <mj-spacer height="27px"/>
-                <mj-button href="http://google.fr" align="left" line-height="48px" font-size="18px" font-weight="bold" background-color="#369CE6" height="50px" >
-                    Visit Our Website
-                </mj-button>
-            </mj-column>
-        </mj-section>
-        <!-- / message -->
-        <!-- divider -->
-        <mj-section>
-            <mj-column width="560px">
-                <mj-divider border-width='2px' border-color="rgb(243, 246, 248)"/>
-            </mj-column>
-        </mj-section>
-        <!-- / divider -->
-        <mj-section>
-            <mj-column>
-                <mj-text font-size="34px" align="center" line-height="38px" color="#131914" font-weight="bold">Latest Products </mj-text>
-            </mj-column>  
-        </mj-section>
-        <!-- products -->
-        <mj-section>
-            <mj-column>
-                <mj-image src="img/image3.jpg" alt="headphones" />
-                <mj-text align="center" font-size="20px" line-height="24px" font-weight="bold" color="#000">Product Name</mj-text>
-                <mj-text align="center" font-size="15px" line-height="20px" color="#777">Nulla eglorerimmerat feugiat elementum</mj-text>
-                <mj-text align="center" css-class="product-link"><a href="#">Know More</mj-text>
-            </mj-column>
-            <mj-column>
-                <mj-image src="img/image2.jpg" alt="television" />
-                <mj-text align="center" font-size="20px" line-height="24px" font-weight="bold" color="#000">Product Name</mj-text>
-                <mj-text align="center" font-size="15px" line-height="20px" color="#777">Nulla eglorerimmerat feugiat elementum</mj-text>
-                <mj-text align="center" css-class="product-link"><a href="#">Know More</mj-text>
-            </mj-column>
-            <mj-column>
-                <mj-image src="img/image3.jpg" alt="headphones" />
-                <mj-text align="center" font-size="20px" line-height="24px" font-weight="bold" color="#000">Product Name</mj-text>
-                <mj-text align="center" font-size="15px" line-height="20px" color="#777">Nulla eglorerimmerat feugiat elementum</mj-text>
-                <mj-text align="center" css-class="product-link"><a href="#">Know More</mj-text>
-            </mj-column>
-        </mj-section>
-        <mj-section>
-            <mj-column>
-                <mj-button href="http://google.fr" background-color="#369CE6" line-height="48px" color="#FFF" font-size="18px" font-weight="bold">
-                    View All Products
-                </mj-button>
-            </mj-column>
-        </mj-section>    
-        <!-- / products -->
+    <!-- / hero -->
+    <!-- arrow -->
+    <mj-wrapper
+      background-color="#FFF"
+      padding="13px"
+      background-url="https://github.com/allan1989/mjml-email/blob/main/img/image1.jpg?raw=true"
+      background-repeat="no-repeat"
+    ></mj-wrapper>
+    <!-- / arrow -->
+    <!-- main content -->
+    <mj-wrapper background-color="#FFF">
+      <!-- message -->
+      <mj-section>
+        <mj-column width="560px" css-class="secondary-link">
+          <mj-text
+            font-family="Open Sans, Sans-serif"
+            font-size="28px"
+            line-height="24px"
+            color="#131914"
+            font-weight="bold"
+            >Hi Dear User,</mj-text
+          >
+          <mj-text
+            font-size="15px"
+            line-height="20px"
+            color="#777"
+            font-family="Open Sans, Sans-serif"
+            >Lorem ipsum dolor sit amet consectetur adipiscing enean porttitor
+            molestie dolor at malesuada tortor dignissim
+            <a href="http://google.fr" target="_blank"
+              >vitae dolor sapien tincidunt</a
+            >
+            consectetur necvitae id ipsum eleifend cursus nisl felissapien
+            fermentum rhoncus. <br /><br />
+            Pellentesque
+            <a href="http://google.fr" target="_blank"
+              >tempus tempus matus vel porttitor</a
+            >. Donec venenatis varius felis lacinia maecenas eu commodo massa.
+            Pellentesque a imperdiet ante.
+          </mj-text>
+          <mj-text
+            font-family="Open Sans, Sans-serif"
+            font-size="15px"
+            font-style="italic"
+            font-weight="bold"
+            color="#777"
+            >Fusce et dolor tempus dapibus nisl ac vestibulum quam ac aliquam
+            lorem.</mj-text
+          >
+          <mj-spacer height="27px" />
+          <mj-button
+            href="http://google.fr"
+            align="left"
+            line-height="48px"
+            font-size="18px"
+            font-weight="bold"
+            font-family="Open Sans, Sans-serif"
+            background-color="#369CE6"
+            height="50px"
+          >
+            Visit Our Website
+          </mj-button>
+        </mj-column>
+      </mj-section>
+      <!-- / message -->
+      <!-- divider -->
+      <mj-section>
+        <mj-column width="560px">
+          <mj-divider border-width="2px" border-color="rgb(243, 246, 248)" />
+        </mj-column>
+      </mj-section>
+      <!-- / divider -->
+      <mj-section>
+        <mj-column>
+          <mj-text
+            font-size="34px"
+            align="center"
+            line-height="38px"
+            color="#131914"
+            font-weight="bold"
+            font-family="Open Sans, Sans-serif"
+            >Latest Products
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <!-- products -->
+      <mj-section>
+        <mj-column>
+          <mj-image
+            src="https://github.com/allan1989/mjml-email/blob/main/img/image3.jpg?raw=true"
+            alt="headphones"
+          />
+          <mj-text
+            align="center"
+            font-size="20px"
+            line-height="24px"
+            font-weight="bold"
+            color="#000"
+            font-family="Open Sans, Sans-serif"
+            >Product Name</mj-text
+          >
+          <mj-text
+            align="center"
+            font-size="15px"
+            line-height="20px"
+            color="#777"
+            font-family="Open Sans, Sans-serif"
+            >Nulla eglorerimmerat feugiat elementum</mj-text
+          >
+          <mj-button
+            href="http://google.fr"
+            color="#369CE6"
+            line-height="20px"
+            background-color="#FFF"
+            font-size="16px"
+            font-weight="bold"
+            padding="0"
+            font-family="Open Sans, Sans-serif"
+          >
+            Know More
+          </mj-button>
+        </mj-column>
+        <mj-column>
+          <mj-image
+            src="https://github.com/allan1989/mjml-email/blob/main/img/image2.jpg?raw=true"
+            alt="television"
+          />
+          <mj-text
+            align="center"
+            font-size="20px"
+            line-height="24px"
+            font-weight="bold"
+            font-family="Open Sans, Sans-serif"
+            color="#000"
+            >Product Name</mj-text
+          >
+          <mj-text
+            align="center"
+            font-size="15px"
+            font-family="Open Sans, Sans-serif"
+            line-height="20px"
+            color="#777"
+            >Nulla eglorerimmerat feugiat elementum</mj-text
+          >
+          <mj-button
+            href="http://google.fr"
+            color="#369CE6"
+            line-height="20px"
+            background-color="#FFF"
+            font-size="16px"
+            font-weight="bold"
+            font-family="Open Sans, Sans-serif"
+            padding="0"
+          >
+            Know More
+          </mj-button>
+        </mj-column>
+        <mj-column>
+          <mj-image
+            src="https://github.com/allan1989/mjml-email/blob/main/img/image3.jpg?raw=true"
+            alt="headphones"
+          />
+          <mj-text
+            align="center"
+            font-size="20px"
+            font-family="Open Sans, Sans-serif"
+            line-height="24px"
+            font-weight="bold"
+            color="#000"
+            >Product Name</mj-text
+          >
+          <mj-text
+            align="center"
+            font-size="15px"
+            font-family="Open Sans, Sans-serif"
+            line-height="20px"
+            color="#777"
+            >Nulla eglorerimmerat feugiat elementum</mj-text
+          >
+          <mj-button
+            href="http://google.fr"
+            color="#369CE6"
+            line-height="20px"
+            background-color="#FFF"
+            font-size="16px"
+            font-weight="bold"
+            font-family="Open Sans, Sans-serif"
+            padding="0"
+          >
+            Know More
+          </mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-section>
+        <mj-column>
+          <mj-button
+            href="http://google.fr"
+            background-color="#369CE6"
+            line-height="48px"
+            color="#FFF"
+            font-size="18px"
+            font-family="Open Sans, Sans-serif"
+            font-weight="bold"
+          >
+            View All Products
+          </mj-button>
+        </mj-column>
+      </mj-section>
+      <!-- / products -->
     </mj-wrapper>
     <!-- footer -->
     <mj-section background-color="#e6e9ec">
-        <mj-column css-class="no-padding">
-            <mj-social >
-                <mj-social-element src="img/fb.png" icon-size="36px" href="#facebook"></mj-social-element>
-                <mj-social-element src="img/tw.png" icon-size="36px" href="#twitter"></mj-social-element>
-                <mj-social-element src="img/in.png" icon-size="36px" href="#linkedIn"></mj-social-element>
-                <mj-social-element src="img/google.png" icon-size="36px" href="#google"></mj-social-element>
-            </mj-social>
-        </mj-column>
+      <mj-column css-class="no-padding">
+        <mj-social>
+          <mj-social-element
+            src="https://github.com/allan1989/mjml-email/blob/main/img/fb.png?raw=true"
+            icon-size="36px"
+            href="#facebook"
+          ></mj-social-element>
+          <mj-social-element
+            src="https://github.com/allan1989/mjml-email/blob/main/img/tw.png?raw=true"
+            icon-size="36px"
+            href="#twitter"
+          ></mj-social-element>
+          <mj-social-element
+            src="https://github.com/allan1989/mjml-email/blob/main/img/in.png?raw=true"
+            icon-size="36px"
+            href="#linkedIn"
+          ></mj-social-element>
+          <mj-social-element
+            src="https://github.com/allan1989/mjml-email/blob/main/img/google.png?raw=true"
+            icon-size="36px"
+            href="#google"
+          ></mj-social-element>
+        </mj-social>
+      </mj-column>
     </mj-section>
-    <mj-section background-color="#e6e9ec" css-class="no-padding">
-        <mj-column css-class="no-padding">
-            <mj-text align="center" font-size="13px" line-height="22px" color="#777"><strong>Address</strong>: Your Street Name, 123, Area Name, Your City Name, Country Name</mj-text>
-            <mj-spacer height="8px" />
-            <mj-text align="center" font-size="13px" line-height="22px" color="#777"><strong>Call</strong>: (123) 456 789 | <strong>Email</strong>: contact@companyname.com</mj-text>
-            <mj-spacer height="25px" />
-        </mj-column>
+    <mj-section background-color="#e6e9ec" css-class="no-padding tertiary-link">
+      <mj-column css-class="no-padding">
+        <mj-text
+          font-family="Open Sans, Sans-serif"
+          align="center"
+          font-size="13px"
+          line-height="22px"
+          color="#777"
+          ><strong>Address</strong>: Your Street Name, 123, Area Name, Your City
+          Name, Country Name</mj-text
+        >
+        <mj-spacer height="8px" />
+        <mj-text
+          align="center"
+          font-size="13px"
+          line-height="22px"
+          color="#777"
+          font-family="Open Sans, Sans-serif"
+          ><strong>Call</strong>: (123) 456 789 | <strong>Email</strong>:
+          <a href="#">contact@companyname.com</a>
+        </mj-text>
+        <mj-spacer height="25px" />
+      </mj-column>
     </mj-section>
     <mj-section>
-        <mj-column>
-            <mj-text align="center" css-class="primary-link" font-size="12px" line-height="15px" color="#777">
-                Copyright &copy 2025 lorem ipsum LTD. All Rights Reserved. | <a href="#">Unsubscribe</a>
-            </mj-text>
-        </mj-column>
+      <mj-column>
+        <mj-text
+          align="center"
+          css-class="primary-link"
+          font-size="12px"
+          line-height="15px"
+          font-family="Open Sans, Sans-serif"
+          color="#777"
+        >
+          Copyright &copy 2025 lorem ipsum LTD. All Rights Reserved. |
+          <a href="#">Unsubscribe</a>
+        </mj-text>
+      </mj-column>
     </mj-section>
     <!-- / footer -->
   </mj-body>
